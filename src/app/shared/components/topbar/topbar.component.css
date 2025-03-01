@@ -1,0 +1,20 @@
+.toolbar{
+  width: calc(100% - 28vh);
+  height: 8vh;
+  position: fixed;
+  display: block !important;
+  align-items: center;
+  right: 0;
+  top: 0;
+}
+
+.mat-toolbar.mat-primary {
+  padding-top: 10px;
+  --mat-toolbar-container-background-color: white;
+  --mat-toolbar-container-text-color: black;
+}
+
+.icon{
+  cursor: pointer;
+}
+

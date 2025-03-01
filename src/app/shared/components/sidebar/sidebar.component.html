@@ -1,0 +1,21 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav mode="side" opened class="mat-sidenav">
+    <mat-card [class]="'img-card'">
+      <img mat-card-image src="../../../../assets/images/sahab_logo.png" alt="Logo">
+    </mat-card>
+    <mat-nav-list>
+      <h4>Home</h4>
+      <a mat-list-item (click)="goToPath('/dashboard')">🖥️ Dashboard</a>
+      <a mat-list-item (click)="goToPath('/reports')">📈 Reports</a>
+      <h4>Home</h4>
+      <a mat-list-item (click)="goToPath('/overview')">📍 Overview</a>
+      <a mat-list-item (click)="goToPath('/planning')">📅 Planning</a>
+      <a mat-list-item (click)="goToPath('/requests')">📩 Requests</a>
+
+      <h4>Configurations</h4>
+      <a mat-list-item (click)="goToPath('/staff')">👥 Staff</a>
+      <a mat-list-item (click)="goToPath('/centers')">🏢 Centers</a>
+      <a mat-list-item (click)="goToPath('/teams')">🤝 Teams</a>
+    </mat-nav-list>
+  </mat-sidenav>
+</mat-sidenav-container>

@@ -1,0 +1,36 @@
+<H4 class="overview-title">Overview</H4>
+<div class="for-container">
+    <app-mat-select (valueChange)="filter()" [items]="regionList"></app-mat-select>
+    <app-month-year-calendar></app-month-year-calendar>
+    <button class="submit-btn pull-right">
+      Submit 🚀
+    </button>
+  </div>
+<div class="grid-container">
+  <div class="information-cards">
+    <mat-card class="card card-medium">Worked Hours: 40</mat-card>
+    <mat-card class="card card-medium">Vehicles: 12</mat-card>
+    <mat-card class="card card-medium">Request Date: 2025-02-28</mat-card>
+    <mat-card class="card card-medium">Request Date: 2025-02-28</mat-card>
+    <mat-card class="card card-medium">Request Date: 2025-02-28</mat-card>
+  </div>
+
+  <div class="staff-cards">
+    <mat-card class="card card-half">
+      <div class="staff-list">
+        <mat-list>
+          <mat-list-item *ngFor="let item of staffList">
+            <img [src]="item.image" class="staff-image" alt="staff-img" />
+            <span>{{ item.fullName }}</span>
+          </mat-list-item>
+        </mat-list>
+      </div>
+    </mat-card>
+    <mat-card class="card card-half">
+      <div class="map-card">
+
+      </div>
+    </mat-card>
+  </div>
+
+</div>

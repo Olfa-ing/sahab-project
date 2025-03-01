@@ -1,0 +1,16 @@
+<mat-toolbar color="primary" class="toolbar">
+  <span>
+    <span (click)="returnBack()" class="icon">🔙</span>
+    <span style="color: grey">{{ parentPath }}</span>
+    <span>{{ routePath }}</span>
+  </span>
+  <div class="pull-right">
+    <span (click)="displayNotifications()" class="icon">🔔</span>
+    <span (click)="displayMessages()" class="icon">✉️</span>
+    <button mat-button [matMenuTriggerFor]="menu">{{ currentUserFullName }}</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Manage Account</button>
+      <button mat-menu-item>Logout</button>
+    </mat-menu>
+  </div>
+</mat-toolbar>
